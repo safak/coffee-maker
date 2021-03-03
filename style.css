@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cup,
+.ingredient-container {
+  width: 400px;
+  height: 350px;
+  border: 25px solid black;
+  border-top: none;
+  border-radius: 0px 0px 40% 40%;
+  position: relative;
+}
+
+.ingredient-container {
+  position: absolute;
+  overflow: hidden;
+}
+
+.handle {
+  width: 70px;
+  height: 120px;
+  border: 25px solid black;
+  border-radius: 0 25% 80% 0;
+  position: absolute;
+  top: 30px;
+  right: -125px;
+}
+
+.coaster {
+  width: 400px;
+  height: 15px;
+  background-color: black;
+  border-radius: 20px;
+  position: absolute;
+  bottom: -45px;
+}
+
+.ingredient {
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.ingredient span {
+  font-size: 50px;
+  font-weight: bold;
+  color: #ccc3c3;
+  position: absolute;
+  left: 20px;
+}
+
+.ingredient.coffee {
+  background-color: #350f0f;
+  z-index: 9;
+}
+
+.ingredient.water {
+  background-color: #c0ebff;
+}
+
+.ingredient.milk {
+  background-color: #f6f7f8;
+}
+
+.ingredient.milk-steamed {
+  background-color: #fae4d7;
+}
+
+.ingredient.milk-foam {
+  background-color: #dbdbdb;
+}
+
+.ingredient.whiskey {
+  background-color: #ff9c1b;
+}
+
+.ingredient.chocolate {
+  background-color: chocolate;
+}
+
+.button-container {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.button-container button {
+  border: 2px solid brown;
+  outline: none;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: white;
+  color: brown;
+  font-weight: 500;
+  margin-bottom: 15px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.button-container button:hover {
+  background-color: brown;
+  color: white;
+}
+
+.ingredient-container.fill-espresso .coffee {
+  height: 150px;
+}
+
+.ingredient-container.fill-americano .coffee {
+  height: 150px;
+}
+
+.ingredient-container.fill-americano .water {
+  height: 350px;
+}
+
+.ingredient-container.fill-cappuccino .coffee {
+  height: 150px;
+}
+
+.ingredient-container.fill-cappuccino .milk-steamed {
+  height: 250px;
+}
+
+.ingredient-container.fill-cappuccino .milk-foam {
+  height: 350px;
+}
+
+.ingredient-container.fill-cappuccino .coffee {
+  height: 150px;
+}
+
+.ingredient-container.fill-cappuccino .milk-steamed {
+  height: 250px;
+}
+
+.ingredient-container.fill-cappuccino .milk-foam {
+  height: 350px;
+}
+
+.ingredient-container.fill-latte .coffee {
+  height: 200px;
+}
+
+.ingredient-container.fill-latte .milk-steamed {
+  height: 350px;
+}
+
+.ingredient-container.fill-macchiato .coffee {
+  height: 200px;
+}
+
+.ingredient-container.fill-macchiato .milk-foam {
+  height: 350px;
+}
+
+.ingredient-container.fill-mocha .coffee {
+  height: 150px;
+}
+
+.ingredient-container.fill-mocha .chocolate {
+  height: 220px;
+}
+
+.ingredient-container.fill-mocha .milk-steamed {
+  height: 350px;
+}
+
+.ingredient-container.fill-irish .coffee {
+  height: 150px;
+}
+
+.ingredient-container.fill-irish .whiskey {
+  height: 220px;
+}
+
+.ingredient-container.fill-irish .milk {
+  height: 350px;
+}
+/*# sourceMappingURL=style.css.map */
